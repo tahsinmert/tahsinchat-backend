@@ -8,8 +8,8 @@ const PORT = 3001; // Dilersen değiştir
 app.use(cors());
 app.use(express.json());
 
-const OPENROUTER_API_KEY = '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';
-const OPENWEATHER_API_KEY = '186beba7c776b405cd4639350d85f6c9';
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+const OPENWEATHER_API_KEY = process.env.OPENWEATHER_API_KEY;
 
 app.post('/api/chat', async (req, res) => {
   try {
