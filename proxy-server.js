@@ -45,5 +45,5 @@ app.get('/api/weather', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Proxy server running on http://localhost:${PORT}`);
+  console.log(`Proxy server running on http://0.0.0.0:${PORT}`);
 }); 
